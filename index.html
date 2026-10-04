@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Safe Plate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Safe Plate</h1>
+    <p class="sub">Tell us what's in the kitchen and who's eating. Get recipes that skip what they can't have.</p>
+
+    <section>
+      <h2>Dietary needs</h2>
+      <div class="checks">
+        <label><input type="checkbox" value="nuts" /> Nut allergy</label>
+        <label><input type="checkbox" value="lactose" /> Lactose intolerant</label>
+        <label><input type="checkbox" value="vegetarian" /> Vegetarian</label>
+        <label><input type="checkbox" value="gluten" /> Gluten free</label>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ingredients you have</h2>
+      <textarea id="ingredients" rows="3" placeholder="rice, tomato, onion, spinach"></textarea>
+      <button id="go">Find recipes</button>
+    </section>
+
+    <p id="status" role="status"></p>
+    <div id="results"></div>
+
+    <footer>Always check food labels. This is not medical advice.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
